@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p id="timer"></p>
+    <script>
+        var timer = document.getElementById("timer");
+
+var seconds = 0;
+var minutes = 0;
+var hours   = 0;
+
+setInterval(function() {
+    seconds++;
+    if (seconds === 60) {
+        seconds = 0;       // Reset seconds and increase minutes
+        minutes++;
+    }
+    if (minutes === 60) {
+        minutes = 0;       // Reset minutes and increase hours
+        hours++;
+    }
+    if (hours === 24) {     // A day has 24 hours
+        hours = 0;
+    }
+  
+    timer.innerHTML = [
+                       (hours < 10 ? "0" + hours : hours),
+                       (minutes < 10 ? "0" + minutes : minutes),
+                       (seconds < 10 ? "0" + seconds : seconds)
+                      ].join(':');
+},1);
+    </script>
+    
+</body>
+</html>

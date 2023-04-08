@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    
+    <link rel="stylesheet" href="style.css">>
+</head>
+<body>
+    <div class="center">
+        <button id="login" onclick="()">SignUp</button>
+        <!-- <input type="button" id="login" value="Sign-Up" required/> -->
+    </div>
+    <div class="pop-up">
+        <div class="close-button">&times;</div>
+        <div class="form">
+            <form>
+                <h2>Employee Registration Form</h2>
+                <div class="form-element">
+                    <label>First Name: </label>
+                    <input type="text" placeholder=" Enter first name" name="fname" required>
+                </div>
+                <div class="form-element">
+                    <label>Last Name: </label>
+                    <input type="text" placeholder=" Enter last name" name="fname" required>
+                </div>
+                <div class="form-element">
+                    <label>Age: </label>
+                    <input type="number" name="age" required>
+                </div>
+                <div class="form-element">
+                    <label>Experience: </label>
+                    <input type="number" name="exp" required>
+                </div>  
+                <div class="form-element">
+                    <label>Gender: </label> 
+                    <br>  
+                    <input type="radio" name="Gender"/> Male 
+                    <input type="radio" name="Gender"/> Female  
+                    <input type="radio" name="Gender"/> Other  
+                    <br>
+                </div> 
+                <div class="form-element">
+                    <label>Date-of-Birth: </label>
+                    <input type="date" name="Date of Birth">
+                </div>
+                <div class="form-element">
+                    <label>About Me</label>
+                    <textarea rows="" col=""> </textarea>
+                </div>
+                <div class="form-element">
+                    <label>Contact No. :  </label>  
+                    <input type="text" name="country code"  value="+91" size="2"/>   
+                    <input type="text" name="phone" size="10"/> <br> <br> 
+                </div>
+                <div class="form-element">
+                    <label>Skills: </label> 
+                    <select>  
+                    <option value="Course">Course</option>  
+                    <option value="HTML">HTML</option>  
+                    <option value="CSS">CSS</option>  
+                    <option value="JAVASCRIPT">JAVASCRIPT</option>  
+                    <option value="ANGULAR">ANGULAR</option>   
+                    </select>
+                </div>
+                <div class="form-element">
+                    <label>Remember me</label>
+                    <input type="checkbox" id="Remember">
+                </div>     
+                <div class="form-element">
+                    <button>Sign-Up</button>
+                </div>              
+            </form>
+        </div>
+    </div>
+
+    <!-- <script>
+        function Signup() {
+          document.getElementById("login").style.display ="block";
+        }
+        
+        // function Signup() {
+        //   document.getElementById("login").style.display = "none";
+        // }
+        </script> -->
+    <!-- <script src="script.js"></script>        -->
+</body>
+</html>
