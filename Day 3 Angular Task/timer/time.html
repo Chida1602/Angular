@@ -1,4 +1,39 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <title>Current Time</title>
+    <link rel="stylesheet" href="day4.css">
+    <script>
+      function showTime() {
+        var date = new Date();
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var seconds = date.getSeconds();
+        var ampm = hours >= 12 ? 'pm' : 'am';
+        hours = hours % 12;
+        hours = hours ? hours : 12;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+        var time = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+        document.getElementById('clock').innerHTML = time;
+        setTimeout(showTime, 1000);
+      }
+    </script>
+  </head>
+  <body onload="showTime()">
+    <div id="clock"></div>
+  </body>
+</html>
+
+
+
+
+
+<!-- 
+    
+    //code for countdown timer
+    
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -39,4 +74,4 @@ setInterval(function() {
     </script>
     
 </body>
-</html>
+</html> -->
